@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    tools:context="com.abqappthu.ttt.MainActivity">
+
+    <com.abqappthu.ttt.AnimatedView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/aview"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/draws"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/xWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/draws"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/oWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xWins"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/drawsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/draws"
+        android:text="Draws: "
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/xWinsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/drawsLabel"
+        android:layout_toLeftOf="@+id/xWins"
+        android:text="X wins: "
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/oWinsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xWinsLabel"
+        android:layout_toLeftOf="@+id/oWins"
+        android:text="O wins: "
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/nnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oWins"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/nntLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/oWinsLabel"
+        android:layout_toLeftOf="@+id/oWins"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Train AI Players"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/XPlayerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:text="X Player: "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/XPlayerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_toRightOf="@+id/XPlayerLabel"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/OPlayerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/XPlayerLabel"
+        android:layout_alignParentLeft="true"
+        android:text="O Player: "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/OPlayerType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/XPlayerType"
+        android:layout_toRightOf="@+id/XPlayerLabel"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/OPlayerLabel"
+        android:layout_alignParentLeft="true"
+        android:text="Play Interactive"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nnt"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mwLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nntLabel"
+        android:layout_toLeftOf="@+id/mw"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mw"
+        android:layout_alignParentRight="true"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/mbLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playButton"
+        android:layout_toLeftOf="@+id/mb"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
